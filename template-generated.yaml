@@ -20,7 +20,7 @@ Resources:
   MyLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      LayerName: my-awesome-layer
+      LayerName: my-numpy1
       Description: Shared utility layer
       ContentUri: s3://samclitesting12345/1e7e5cea6dab513f6427326c2df62eb8
       CompatibleRuntimes:
