@@ -1,29 +1,29 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: My shared Lambda layer
-
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: new-sample-layer-python3_12
+    Name: new-sample-layer-python3.12
     Description: A shared Lambda layer with NumPy
     Author: SaiPavan
     SpdxLicenseId: MIT
-    LicenseUrl: LICENSE.txt
-    ReadmeUrl: README.md
-    Labels: ['lambda', 'layer', 'numpy']
+    LicenseUrl: s3://samclitesting12345/70661af297a6a8f1205899a3fdfc96b0
+    ReadmeUrl: s3://samclitesting12345/f52988bf60cb31639e169c18f2ace9ca
+    Labels:
+    - lambda
+    - layer
+    - numpy
     HomePageUrl: https://github.com/Saipavangit1997/numpy-lambda-layer.git
     SemanticVersion: 1.0.0
     SourceCodeUrl: https://github.com/Saipavangit1997/numpy-lambda-layer.git
-
 Resources:
   MyLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
       LayerName: my-numpy1
       Description: Shared utility layer
-      ContentUri: ./layer
+      ContentUri: s3://samclitesting12345/c8197734cff512ff1ad1d452e64edc14
       CompatibleRuntimes:
-        - python3.12
-
-#sam package --output-template-file template-generated.yaml --s3-bucket samclitesting12345
-#sam publish --template template-generated.yaml
+      - python3.12
+    Metadata:
+      SamResourceId: MyLayer
