@@ -22,7 +22,7 @@ Resources:
     Properties:
       LayerName: my-numpy1
       Description: Shared utility layer
-      ContentUri: s3://samclitesting12345/982ac16e82364eaf6d97dfcb6febcabc
+      ContentUri: s3://layerbucket1998/numpy-layer.zip
       CompatibleRuntimes:
       - python3.12
     Metadata:

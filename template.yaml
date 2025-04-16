@@ -21,7 +21,7 @@ Resources:
     Properties:
       LayerName: my-numpy1
       Description: Shared utility layer
-      ContentUri: ./layer
+      ContentUri: s3://layerbucket1998/python.zip
       CompatibleRuntimes:
         - python3.12
 
