@@ -19,8 +19,11 @@ Resources:
   MyLayer:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      LayerName: my-awesome-layer
+      LayerName: my-numpy1
       Description: Shared utility layer
       ContentUri: ./layer
       CompatibleRuntimes:
         - python3.11
+
+#sam package --output-template-file template-generated.yaml --s3-bucket samclitesting12345
+#sam publish --template template-generated.yaml
