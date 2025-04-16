@@ -23,7 +23,7 @@ Resources:
       Description: Shared utility layer
       ContentUri: ./layer
       CompatibleRuntimes:
-        - python3.11
+        - python3.12
 
 #sam package --output-template-file template-generated.yaml --s3-bucket samclitesting12345
 #sam publish --template template-generated.yaml
