@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: My shared Lambda layer
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: new-sample-layer-python3.12
+    Name: new-sample-layer-python3_12
     Description: A shared Lambda layer with NumPy
     Author: SaiPavan
     SpdxLicenseId: MIT
