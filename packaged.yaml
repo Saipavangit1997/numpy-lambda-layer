@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: My shared Lambda layer
+Resources:
+  MyLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: my-awesome-layer
+      Description: Shared utility layer
+      ContentUri: s3://samclitesting12345/6ed1ea2aeee426d57547ac8901b5e5c0
+      CompatibleRuntimes:
+      - python3.11
+    Metadata:
+      SamResourceId: MyLayer

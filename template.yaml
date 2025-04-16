@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: My shared Lambda layer
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: my-sample-layer
+    Description: A shared Lambda layer with NumPy
+    Author: SaiPavan
+    SpdxLicenseId: MIT
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['lambda', 'layer', 'numpy']
+    HomePageUrl: https://github.com/Saipavangit1997/numpy-lambda-layer.git
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/Saipavangit1997/numpy-lambda-layer.git
+
+Resources:
+  MyLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: my-awesome-layer
+      Description: Shared utility layer
+      ContentUri: ./layer
+      CompatibleRuntimes:
+        - python3.11
