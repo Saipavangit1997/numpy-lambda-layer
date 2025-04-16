@@ -4,7 +4,7 @@ Description: My shared Lambda layer
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: new-sample-layer-python
+    Name: numpy_sai_abcdef
     Description: A shared Lambda layer with NumPy
     Author: SaiPavan
     SpdxLicenseId: MIT
