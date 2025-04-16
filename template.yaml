@@ -21,7 +21,7 @@ Resources:
     Properties:
       LayerName: my-numpy1
       Description: Shared utility layer
-      ContentUri: ./layer
+      ContentUri: ./layer/numpy_-layer.zip
       CompatibleRuntimes:
         - python3.12
 
